@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://fontawesome.com/icons/chart-pie?style=solid">
     <link rel="stylesheet" type="text/css" href="Comun.css">
     <link rel="stylesheet" type="text/css" href="main-page.css">
+    <script src="postUrl.js"></script>
     <title>Post Page</title>
 </head>
 
@@ -46,8 +47,8 @@
             <div class="post-area">
                 <h1>La ce te gandesti astazi?</h1>
                 <div class="post-content">
-                    <textarea><!--TEXT AREA AICI--> </textarea>
-                    <button class="btn attach-button">Atach</button>
+                    <textarea id="source"><!--TEXT AREA AICI--> </textarea>
+                    <button class="btn attach-button" onClick="findUrl()">Atach</button>
                     <button class="btn attach-button">Post It</button>
                 </div>
             </div>
