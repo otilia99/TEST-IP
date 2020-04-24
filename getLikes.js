@@ -35,5 +35,5 @@ function getLikesCount () {
   }
   xhttp.open('GET', url, true)
   console.log(url)
-  //xhttp.send(null)
+  xhttp.send(null)
 }
