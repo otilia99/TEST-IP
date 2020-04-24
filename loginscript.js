@@ -22,6 +22,7 @@ function loginFunction() {
 
         var count = 0;
         var countResponse = 0;
+        var displayed = 0;
 
         invocation.onreadystatechange = function () {
           //alert(this.status + " " + this.response);
@@ -48,7 +49,10 @@ function loginFunction() {
       				}
       		else
       			if (this.status == 401)
-      				alert("Your login credentials don't match an account in our system.");
+              if (displayed == 0) {
+      				  alert("Your login credentials don't match an account in our system.");
+                displayed++;
+            }
 
         };
 
